@@ -1,0 +1,31 @@
+/* CSS Variables */
+:root {
+    --primary-color: #ddd;
+    --dark-color: #333;
+    --light-color: #fff;
+    --shadow-color: #0 1px 5px rgba(104, 104, 104, 0.8)  
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark-color);
+}
+
+body {
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+.btn {
+    background: var(--dark-color);
+    color: var(--light-color);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+}
