@@ -156,3 +156,11 @@ img {
 }
 
 /* Footer */
+footer {
+  margin-top: 1rem;
+  background: var(--dark-color);
+  color: var(--light-color);
+  text-align: center;
+  padding: 0.5rem;
+}
+
