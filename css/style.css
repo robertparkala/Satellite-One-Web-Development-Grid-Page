@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
-  --primary-color: #ddd;
-  --dark-color: #333;
+  --primary-color: #f0a500;
+  --dark-color: #1a1c20;
   --light-color: #fff;
   --shadow-color: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background: #ccc;
+  background: #f4f4f4;
   margin: 30px 50px;
   line-height: 1.4;
 }
@@ -36,10 +36,9 @@ img {
 }
 
 /* Navbar */
-
 .main-nav ul {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1.25rem;
   padding: 0;
   list-style: none;
   grid-template-columns: repeat(4, 1fr);
@@ -61,3 +60,51 @@ img {
     background: var(--dark-color);
     color: var(--light-color);
 }
+
+/* Top Container */
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+
+/* Showcase */
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background-image: url("../img/showcase.jpg");  
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: var(--shadow-color);
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: var(--light-color);
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: var(--light-color)
+}
+
+
+.top-box-a {
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
+}
+
+
+
