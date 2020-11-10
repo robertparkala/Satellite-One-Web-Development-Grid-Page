@@ -45,20 +45,20 @@ img {
 }
 
 .main-nav a {
-    background: var(--primary-color);
-    display: block;
-    text-decoration: none;
-    padding: 0.8rem;
-    text-align: center;
-    color: var(--dark-color);
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    box-shadow: var(--shadow-color);
+  background: var(--primary-color);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark-color);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-color);
 }
 
 .main-nav a:hover {
-    background: var(--dark-color);
-    color: var(--light-color);
+  background: var(--dark-color);
+  color: var(--light-color);
 }
 
 /* Top Container */
@@ -66,15 +66,15 @@ img {
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
-    'showcase showcase top-box-a'
-    'showcase showcase top-box-b';
+    "showcase showcase top-box-a"
+    "showcase showcase top-box-b";
 }
 
 /* Showcase */
 .showcase {
   grid-area: showcase;
   min-height: 400px;
-  background-image: url("../img/showcase.jpg");  
+  background-image: url("../img/showcase.jpg");
   background-size: cover;
   background-position: center;
   padding: 3rem;
@@ -94,9 +94,22 @@ img {
 .showcase p {
   font-size: 1.3rem;
   margin-top: 0;
-  color: var(--light-color)
+  color: var(--light-color);
 }
 
+/* Top Box  */
+.top-box {
+  background: var(--primary-color);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow-color);
+  padding: 1.5rem;
+}
+
+.top-box .price {
+  font-size: 2.5rem;
+}
 
 .top-box-a {
   grid-area: top-box-a;
@@ -106,5 +119,16 @@ img {
   grid-area: top-box-b;
 }
 
+/* Boxes */
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
-
+.box {
+  background: var(--primary-color);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow-color);
+}
