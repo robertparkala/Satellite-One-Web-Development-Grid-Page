@@ -187,6 +187,13 @@ footer a:hover {
     'showcase showcase'
     'top-box-a top-box-b';
   }
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+  
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
 }
 
 
