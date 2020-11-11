@@ -194,6 +194,10 @@ footer a:hover {
   .main-nav ul {
     grid-template-columns: 1fr;
   }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
 }
 
 
