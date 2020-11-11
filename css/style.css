@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
   --primary-color: #f0a500;
-  --dark-color: #1a1c20;
+  --dark-color: #000000;
   --light-color: #fff;
   --shadow-color: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
@@ -88,7 +88,7 @@ img {
 
 .showcase h1 {
   font-size: 4rem;
-  margin-bottom: 0;
+  margin: 0;
   color: var(--light-color);
 }
 
@@ -128,7 +128,7 @@ img {
 }
 
 .box {
-  background: var(--primary-color);
+  background: #cf7500;
   text-align: center;
   padding: 1.5rem 2rem;
   box-shadow: var(--shadow-color);
@@ -213,6 +213,11 @@ footer a:hover {
     'showcase'
     'top-box-a'
     'top-box-b';
+  }
+
+  .showcase .sub-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }
 
