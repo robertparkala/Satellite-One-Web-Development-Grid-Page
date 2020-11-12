@@ -144,6 +144,15 @@ img {
   padding: 3rem;
 }
 
+.info2 {
+  background: var(--primary-color);
+  box-shadow: var(--shadow-color);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
 /* Portfolio */
 .portfolio {
   display: grid;
@@ -204,6 +213,24 @@ footer a:hover {
     text-align: center;
     margin: auto;
   }
+
+  .info2 {
+    grid-template-columns: 1fr;
+  }
+
+  .info2 a {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+
+  .info2 div:first-child {
+    order: 1;
+  }
+
+  .info2 div:last-child {
+    order: 2;
+  }
 }
 
 /* Mobile */
@@ -218,7 +245,7 @@ footer a:hover {
   .showcase .sub-heading {
     font-size: 2rem;
     margin-bottom: 1rem;
-  }
+  } 
 }
 
 
